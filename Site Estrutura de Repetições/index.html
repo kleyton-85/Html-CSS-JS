@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESTRUTURA DE REPETIÇÃO</title>
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+<body>
+<header>
+    <div id="cabecalho">
+        <div class="logo">
+           <a href="index.html">ESTRUTURA DE REPETIÇÃO E ARRAYS EM JS</a>
+        <nav class="menu">
+            <ul class="lista-menu">
+                <li><a href='#while'>WHILE</a></li>
+                <li><a href='#do-while'>DO/WHILE</a></li>
+                <li><a href='#for'>FOR</a></li>
+                <li><a href='#vetor'>ARRAY</a></li>
+                <li><a href='#responsividade'>RESPONSIVIDADE</a></li>
+            </ul>
+        </nav>
+        </div>
+    </div>
+</header>
+    <section id="principal">
+        <h1>ESTRUTURA DE REPETIÇÃO E VETORES</h1>
+            <p>
+            Dentro da lógica de programação é uma estrutura que permite executar mais de uma vez o mesmo comando ou conjunto de comandos, de acordo com uma condição ou com um contador. <br>
+            São utilizadas, por exemplo, para repetir ações semelhantes que são executadas para todos os elementos de uma lista de dados, ou simplesmente para repetir um mesmo processamento até que a condição seja satisfeita. <br>
+            Existem 3 estruturas de repetição básica para praticamente todas as linguagens de programação, seja C ou javascript. <br>
+            WHILE, DO/WHILE e FOR. <br>
+            </p>
+    </section>
+        <section id="while">
+            <h2>WHILE</h2>
+            <p>
+            É dentre as 3 a mais simples. <br>            
+            * Repete um bloco de código enquanto uma condição permanecer verdadeira.<br>            
+            * Caso a condição seja falsa, os comandos dentro do while não serão executados e a execução continuará  com os comandos após o while. <br>            
+            * A repetição do while é controlada por uma condição que verifica alguma variável. Porém para que o while funcione corretamente é importante que essa variável sofra alteração dentro do while. Ex: um contador. <br>            
+            * Após entrar dentro da repetição, o bloco de comandos sempre será executado, mesmo que dentro do bloco a variável que está controlando a execução seja alterada. <br>            
+            Quando utilizar? <br>            
+            * Não há necessidade de inicializar ou atualizar variáveis contadoras. <br>            
+            * As etapas de inicialização ou atualização requerem muitas instruções e não caberiam elegantemente numa única linha do for. <br>            
+            * As informações necessárias para avaliar a condição não dependem de uma variável contadora ou são obtidas durante a execução do bloco. <br>
+            </p>
+        <div>
+            Digite um Número: <input type="number" name="num" id="num">
+            <input type="button" value="Gerar Fatorial" onclick="fatorial()">
+        </div>
+            <br>
+        <div id="res"></div>
+        </section>
+        <section id="do-while">
+            <h2>DO / WHILE</h2>
+            <p>
+            Muito parecido com o while, porém tem uma diferença crucial: condição é verificada após executar o bloco de comandos. <br>            
+            * Há uma bloco de comandos e logo depois uma verificação. Assim caso a variável condicional for alterada dentro do bloco de comandos, isso afetará a validação da condição. <br>            
+            * A escolha entre while e do while é mínima, então dependerá do bom senso do programador, que optará pela estrutura que deixar o algoritmo mais simples e legível. <br>            
+            Quando utilizar? <br>            
+            * Quando é necessário executar um bloco pelo menos uma vez para obter as informações necessárias para avaliar a condição. <br>
+            </p>
+        <div>
+            Digite um Número: <input type="number" name="num" id="txtn">
+            <input type="button" value="Gerar Tabuada" onclick="tabuada()">
+        </div>
+        <div>
+            <br>
+            <select name="tabuada" id="tab" size="1"></select>
+        </div>
+        </section>
+        <section id="for">
+            <h2>FOR</h2>
+            <p>
+            A instrução FOR cria um loop que consiste em três expressões opcionais, dentro de parênteses e separadas por ponto e vírgula, seguidas por uma declaração ou uma sequência de declarações executadas em sequência. <br>
+            * INICIALIZAÇÃO: <br>
+            Uma expressão (incluindo expressões de atribuição) ou declarações variáveis. Geralmente usada para iniciar o contador de variáveis. Esta expressão pode, opcionalmente, declarar novas variáveis com a palavra chave var. Essas variáveis não são locais no loop, isto é, elas estão no mesmo escopo que o loop for está. Variáveis declaradas com let são locais para a declaração. <br>
+            O resultado desta expressão é descartado. <br>
+            * CONDIÇÃO: <br>
+            Uma expressão para ser avaliada antes de cada iteração do loop. Se esta expressão for avaliada para true, declaração será executado. Este teste da condição é opcional. Se omitido, a condição sempre será avaliada como verdadeira. Se a expressão for avaliada como falsa, a execução irá para a primeira expressão após a construção loop for. <br>
+            * EXPRESSÃO FINAL: <br>
+            Uma expressão que será validada no final de cada iteração de loop. Isso ocorre antes da próxima avaliação da condição. Geralmente usado para atualizar ou incrementar a variável do contador. <br>
+            </p>
+        <div>
+            Digite um Número: <input type="number" name="num" id="n">
+            <input type="button" value="Gerar Tabuada" onclick="tabuad()">
+        </div>
+            <br>
+            <div id="resposta" style="display:inline">
+            </div>
+        </section>
+        <section id="vetor">
+            <h2>ARRAYS</h2>
+            <p>
+            Arrays são objetos semelhantes a listas que vêm com uma série de  métodos embutidos para realizar operações de travessia e mutação. Nem o tamanho de um array JavaScript nem os tipos de elementos são fixos. Já que  o tamanho de um array pode ser alterado a qualquer momento e os dados podem ser armazenados em posições não contíguas, arrays JavaScript não tem a garantia de serem densos; isso depende de como o programador escolhe usá-los. <br><br>
+            Tradicionalmente, um Array reserva uma alocação contínua de memória de tamanho predefinido. No JavaScript, esse não é o caso. Um Array no JavaScript é simplesmente um objeto glorificado com um construtor único, com uma sintaxe literal e com um conjunto adicional de propriedades e de métodos herdados de um protótipo de Array. Isso significa fazer um pequeno sacrifício de performance, mais do que compensado pela facilidade de uso e pelo poder de seus utilitários.<br>
+            </p>
+            <div>
+                Gerar Média da uma Turma: <input type="button" value="Gerar Média" onclick="vetor()"> 
+            </div>
+            <br>
+            <div id="resp"></div>
+        </section>
+        <section id="responsividade">
+            <h2>RESPONSIVIDADE</h2>
+            <p>
+            Com o crescimento da variedade de dispositivos onde os websites são visualizados (laptops, tablets, netbooks, celulares, desktops com tela pequena, iMacs com telas gigantescas, segundo monitor etc.), seria enlouquecedor desenhar múltiplas versões de um mesmo site que suprissem cada uma dessas variações de tamanho de tela e cada uma das resoluções de tela disponíveis no mercado.<br>
+            A Responsividade é uma das soluções técnicas para esse problema: programar um site de forma que os elementos que o compõem se adaptem automaticamente à largura de tela do dispositivo no qual ele está sendo visualizado.<br><br>
+            Um design responsivo inclui:<br>
+            * Adaptar o layout da página de acordo com a resolução em que está sendo visualizada.<br>
+            * Redimensionar as imagens automaticamente para que caibam na tela e para que não sobrecarreguem a transferência de dados em um celular, por exemplo.<br>
+            * Simplificar elementos da tela para dispositivos móveis, onde o usuário normalmente tem menos tempo e menos atenção durante a navegação.<br>
+            * Ocultar elementos desnecessários nos dispositivos menores.<br>
+            * Adaptar tamanho de botões e links para interfaces touch onde o ponteiro do mouse é substituído pelo dedo do usuário.<br>
+            * Utilizar de forma inteligente recursos mobile como geolocalização e mudança na orientação do aparelho (horizontal ou vertical).<br>  
+            </p>
+        </section>
+    <footer>
+        <a href="#cabecalho">Voltar ao Topo</a><br><br><br>
+        <label>Copyright &copy 2020 - Kleyton Dias</label>
+    </footer>
+    <script src="./js/fatorial.js"></script>
+    <script src="./js/do_while.js"></script>
+    <script src="./js/for.js"></script>
+    <script src="./js/arrays.js"></script>
+</body>
+</html>
