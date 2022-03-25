@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <link rel="stylesheet" href="../css/main.css">
+        <link rel="stylesheet" href="../css/form.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contato - BURGER UNIVERSE</title> 
+        <link rel="shortcut icon" href="../img/veto/favicon.ico" type="image/x-icon">   
+    </head>
+    <body>
+        <header id='cabecalho'>
+        <main>
+            <img class="img-frete" src="../img/veto/frete.jpg"  />
+            <label class="frete">Frete Grátis para Campo Grande-MS</label>
+            <div class="redes-sociais">
+                <ul>
+                    <li>
+                        <a href='https://facebook.com' target="_blank"><img src='../img/veto/face.png' width="20px" height="20px" />
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://instagram.com' target="_blank"><img src='../img/veto/insta.png' width="20px" height="20px"/>
+                        </a>
+                    </li>
+                    <li>
+                        <a href='https://twitter.com' target="_blank"><img src='../img/veto/twiter.png' width="20px" height="20px"/>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </main>
+        </header>
+        <div class='logo'>
+            <a href='../index.html'><img src='../img/veto/logo.png' width="100px" height="100px"/>
+            </a>
+        </div>
+        <header class='menu-principal'>
+            <div class='menu'>
+                <ul>
+                    <li>
+                        <a href='../index.html'>Home</a>
+                    </li>
+                    <li>
+                        <a href='../page/cardapio.html'>Cardápio</a>
+                    </li>
+                    <li>
+                        <a href='../index.html#historia'>Sobre Nós</a>
+                    </li>
+                    <li>
+                        <a href='../page/form.html'>Contato</a>
+                    </li>
+                    <li>
+                        <a href='../page/login.php'>Minha Conta</a>
+                    </li>
+                </ul>
+                <label class='icon'>&#9776</label>
+            </div>
+        </header>
+            <img class='fundo' src='../img/fundo-contato.jpg' width="100%" height="100%">
+        <h1>ENTRE EM CONTATO CONOSCO!</h1>
+    <div class='form-1'>
+    <form name='formulario'>
+        <fieldset>
+               <div class='nome'>
+                <label>NOME:</label><br>
+                <input type='text' name='nome' required>
+            </div><br>
+            <div class='email'>
+                <label>E-MAIL:</label><br>
+                <input type='email' name='email' required>
+            </div><br>
+            <div class='repit_email'>
+                <label>CONFIRME SEU E-MAIL:</label><br>
+                <input type='email' name='repit-email' required oninput='check(this)'>
+            </div><br>
+            <div class='mensagem'>
+                <label>FALE CONOSCO:</label><br>
+                <textarea name='' id='' cols='60' rows='10' required></textarea>
+            </div><br>
+            <button class='enviar' type='submit' name='enviar'>ENVIAR</button>
+            </h2>
+        </fieldset>
+    </form>
+    </div>
+    <form class='campos-end'>
+        <div class='end'>
+            <h2>ENDEREÇO</h2>
+            <label>Matriz: Av. Afonso Pena, 1234, Centro</label><br>
+            <label>79002-908 - Campo Grande/MS</label><br><br><br>
+        </div>
+        <div class='email'>
+            <h2>E-MAIL</h2>
+            <label>contato@burgeruniverse.com.br</label><br><br><br>
+        </div>
+        <div class='cel'>
+            <h2>CONTATO</h2>
+            <label>Telefone: (67) 1234-5678</label><br>
+            <label>Celular: (67) 9 8765-4321</label>
+        </div>
+    </form>
+        <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+        <script src="../js/icon.js"></script>
+</body>
+</html>
+

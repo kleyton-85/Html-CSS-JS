@@ -1,0 +1,390 @@
+body{
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+}
+ul{
+    padding: 0px!important;
+}
+#cabecalho{
+    background-color: #ffffff ;
+    height: 42px;
+    position: relative;
+}
+.img-frete{
+    position: absolute;
+    width: 45px;
+    height: 22px;
+    margin-top: 15px;
+    float: left;
+    margin-left: -15%;
+}
+.frete{
+    font-size: 12px;
+    font-weight: 700;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    margin-top: 20px;
+    float: left;
+    margin-left: -11%;
+}
+main{
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+}
+.logo{
+    float: left;
+    position: absolute;
+    z-index: 9;
+    margin-top: -32px;
+    margin-left: 80px;
+}
+.redes-sociais{
+    float: right;
+}
+.redes-sociais ul li{
+    margin-left: 20px;
+    float: left;
+    list-style: none;
+}
+.menu-principal{
+    text-align: right;
+    height: 90px;
+    background-color: black;
+    border-top: 2px solid #d3d3d3;
+    border-bottom: 0.2px solid #d3d3d3;
+    position: static;
+}
+.menu ul li{
+    display: inline-block;
+    margin: 20px;
+}
+.menu ul li a{
+    font-family: Arial, Helvetica, sans-serif; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 17px;
+    font-weight: 700;
+    text-transform: uppercase; 
+}
+.menu ul li a:hover{
+    color: #cb9a31;
+    border-bottom: 2px dotted #cb9a31;
+}
+.menu{
+    margin-right: 85px;
+}
+.icon{
+    color: white;
+    font-size: 60px;
+    cursor: pointer;
+    display: none;
+    margin-top: 12px;
+}
+button.slick-prev{
+    font-size: 0px;
+    border: none;
+    height: 51px;
+    width: 25px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/veto/anterior.png);
+    top: 40%;
+    left: 8%;
+    cursor: pointer;
+}
+button.slick-next{
+    font-size: 0px;
+    border: none;
+    height: 51px;
+    width: 25px;
+    z-index: 9;
+    background-color: transparent;
+    position: absolute;
+    background-image: url(../img/veto/proximo.png);
+    top: 40%;
+    right: 8%;
+    cursor: pointer;
+}
+ul.slick-dots li button{
+    font-size: 0px;
+    width: 20px;
+    height: 20px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: transparent;
+    cursor: pointer;
+}
+.slick-dots{
+    margin: 0 auto;
+    width: 50%;
+    position: absolute;
+    left: 46%; 
+    margin-top: -3%;
+}
+ul.slick-dots li button:hover{
+    background: #cb9a31;
+}
+.slick-dots li{
+    display: inline-block;
+    padding-left: 10px;
+}
+
+.bem-vindo{
+    position: absolute;
+    float: left;
+    margin-left: 29%;
+    margin-top: 120px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 88px;
+    font-weight: 800;
+    text-transform: uppercase; 
+    z-index: 9;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.descricao{
+    position: absolute;
+    float: left;
+    margin-left: 19%;
+    margin-top: 250px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 22px;
+    font-weight: 800;
+    text-transform: uppercase; 
+    z-index: 9;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.descricao2{
+    position: absolute;
+    float: left;
+    margin-left: 32%;
+    margin-top: 300px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 800;
+    z-index: 9;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+#historia{
+    border-top: 0.2px solid #d3d3d3;
+    display: block;
+    background-color: black;
+    padding: 100px 160px;
+}
+.escrita{
+    text-align: left;
+    padding-left: 11%;
+}
+.logo_escrita{
+    text-align: right;
+    padding-left: 12%;
+    position: absolute;
+    padding-top: 100px;
+}
+#historia p{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: 38%;
+    text-align: justify;
+    color: #ffffff;
+}
+#historia .p2{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.cardapio img{
+    border-top: 0.2px solid #d3d3d3;
+    position: static;
+    margin-bottom: -4px;
+    
+}
+.cardapio_descr{
+    position: absolute;
+    z-index: 9;
+    color: white;
+    float: left;
+    font-size: 52px;
+    margin-left: -88%;
+    margin-top: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.cardapio_botao{
+    position: absolute;
+    z-index: 9;
+    color: white;
+    float: left;
+    font-size: 20px;
+    margin-left: -80%;
+    margin-top: 24%;
+    border-radius: 30px;
+    width: 220px;
+    height: 35px;
+    background-color: rgba(0, 0, 0, 0.4);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    border: 2px white solid;
+    cursor: pointer;
+}
+.mapa{
+    border-top: 0.2px solid #d3d3d3;
+    background-color: black;
+    padding: 40px;
+    text-align: center;
+}
+footer{
+    border-top: 0.2px solid #d3d3d3;
+    padding: 20px 0 20px;
+    background-color: black;
+    text-align: center;
+    margin: 0 auto;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 12px;
+}
+footer a{
+    color: #ffffff;
+    text-decoration: none;
+}
+footer label{
+    color: #ffffff;
+    font-size: 10px;
+}
+.google{
+    width: 80%; 
+    height: 20%;
+}
+
+@media screen and (min-width: 840px) and (max-width: 1300px){
+    .bem-vindo{
+        font-size: 50px;
+        margin-left: 32%;
+        margin-top: 7%;
+    }
+    .menu ul li a{
+        font-size: 14px;
+        
+    }
+    .frete{
+        margin-left: -9%;
+    }
+    .descricao{
+        text-align: center;
+        font-size: 16px;
+        margin-top: 18%;
+        margin-left: 14%;
+    }
+    .descricao2{
+        text-align: center;
+        font-size: 14px;
+        margin-top: 24%;
+        margin-left: 22%;
+    }
+    .escrita{
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo_escrita{
+        display: none;
+    }
+    #historia p{
+        padding-right: 0%;
+    }
+    .cardapio_descr{
+        font-size: 40px;
+    }
+    .cardapio_botao{
+        font-size: 16px;
+        margin-top: 20%;
+    }
+    .mapa{
+        padding: 40px; 
+    }
+    .menu ul li{
+        margin-right: 5px;
+    }
+    
+}
+@media screen and (max-width: 839px){
+    #cabecalho{
+        display: none;
+    }
+    .logo{
+        float: left;
+        position: absolute;
+        z-index: 9;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .menu-principal{
+        height: 120px;
+    }
+    .slick, .bem-vindo, .descricao, .descricao2, .logo_escrita{
+        display: none;
+    }
+    #historia{
+        padding: 0px;
+    }
+    #historia p{
+        max-width: 90%;
+        padding: 10px 10px;
+    }
+    #historia .p2{
+        padding-bottom: 30px;
+        margin: 0;
+    }
+    .escrita{
+        max-width: 243px;
+        padding-left: 6%;
+        padding-top: 10%;
+    }
+    .cardapio_descr{
+        font-size:25px;
+        margin-left: -82%;
+    }
+    .cardapio_botao{
+        font-size: 16px;
+        margin-left: -80%;
+        width: auto;
+        margin-top: 20%;
+    }
+    .icon{
+        display: block;
+    }
+    .menu ul{
+        position: absolute;
+        z-index: 999;
+        width: 100%;
+        height: 58evh;
+        background:  #cb9a31;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        margin-top: 44px;
+        border-bottom: 0.2px solid #d3d3d3;
+    }
+    .menu ul li{
+        display: block;
+        margin: 30px 0;
+        line-height: 30px;
+    }
+    .menu ul li a{
+        font-size: 18px;
+        text-shadow: black 0.1em 0.1em 0.2em;
+    }
+    .menu ul.show{
+        left: 0;
+    }
+}

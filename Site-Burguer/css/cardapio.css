@@ -1,0 +1,149 @@
+.fundo{
+    background-color: black;
+    position: relative;
+    margin-top: -24px;
+}
+.grid{
+    display: grid;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-bottom: 100px;
+    padding-top: 50px;
+}
+.um{
+    text-align: left;
+}
+.mexico{
+    float: right;
+    padding-right: 61%;
+    padding-top: 28px;
+}
+.dois{
+    text-align: right;
+}
+.venezuela{
+    float: left;
+    padding-left: 48%;
+    padding-top: 48px;
+}
+.dois p{
+    text-align: right;
+}
+.tres{
+    text-align: left;
+}
+.canada{
+    float: right;
+    padding-right: 58%;
+    padding-top: 28px;
+}
+.quatro{
+    text-align: right;
+}
+.franca{
+    float: left;
+    padding-left: 59%;
+    padding-top: 48px;
+}
+.quatro p{
+    text-align: right;
+}
+.cinco{
+    text-align: left;
+}
+.espanha{
+    float: right;
+    padding-right: 55%;
+    padding-top: 43px;
+}
+.seis{
+    text-align: right;
+}
+.uruguai{
+    float: left;
+    padding-left: 58%;
+    padding-top: 48px;
+}
+.seis p{
+    text-align: right;
+}
+.sete{
+    text-align: left;
+}
+.eua{
+    float: right;
+    padding-right: 70%;
+    padding-top: 43px;
+}
+.oito{
+    text-align: right;
+}
+.brasil{
+    float: left;
+    padding-left: 61%;
+    padding-top: 48px;
+}
+.oito p{
+    text-align: right;
+}
+h1{
+    padding-top: 30px;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    font-weight: 800;
+    color: #ffffff;      
+}
+h3{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    font-weight: 800;
+}
+p{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+@media screen and (min-width: 840px) and (max-width: 1100px){
+    .grid{
+        display: grid;
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+    .mexico{
+        padding-right: 27%;
+    }
+    .venezuela{
+        padding-left: 8%;
+    }
+    .canada{
+        padding-right: 22%;
+    }
+    .franca{
+        padding-left: 24%;
+    }
+    .espanha{
+        padding-right: 17%;
+    }
+    .uruguai{
+        padding-left: 22%;
+    }
+    .eua{
+        padding-right: 43%;
+    }
+    .brasil{
+        padding-left: 28%;
+    }
+}
+@media screen and (max-width: 839px){
+   .grid{
+        display: block;
+        padding: 20px;
+   }
+   .mexico, .venezuela, .canada, .franca, .espanha, .uruguai, .eua, .brasil{
+        padding: 0;
+        max-width: 60%;
+   }
+    
+}
